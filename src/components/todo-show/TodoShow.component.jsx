@@ -12,7 +12,10 @@ const TodoShow = () => {
     return todo.length ? (
         <Container>
             {todo.map((task, index) => (
-                <div className="task" key={index}>
+                <div
+                    className={`task ${index !== 0 ? "mt-2" : ""}`}
+                    key={index}
+                >
                     <div className="task__header d-flex">
                         <h6
                             className={`task__title ${
@@ -23,7 +26,11 @@ const TodoShow = () => {
                         </h6>
                         <div className="task__btns-group">
                             <button
-                                className="task__btn task__btn-check"
+                                className={`task__btn ${
+                                    task.status === "completed"
+                                        ? "task__btn-check"
+                                        : ""
+                                }`}
                                 onClick={() =>
                                     dispatch(completeTodoTask(index))
                                 }
@@ -55,7 +62,13 @@ const TodoShow = () => {
                             </button>
                         </div>
                     </div>
-                    <p className="task__desc">{task.description}</p>
+                    <p
+                        className={`task__desc ${
+                            task.status === "completed" ? "completed" : ""
+                        }`}
+                    >
+                        {task.description}
+                    </p>
                 </div>
             ))}
         </Container>

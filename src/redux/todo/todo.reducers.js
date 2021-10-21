@@ -20,8 +20,9 @@ export const todoReducers = (state = initialState, action) => {
                 ...state,
                 todo: state.todo.map((item, index) => {
                     if (index === action.payload) {
-                        item.status = "completed";
-                        return item;
+                        item.status === "inprogress"
+                            ? (item.status = "completed")
+                            : (item.status = "inprogress");
                     }
                     return item;
                 }),

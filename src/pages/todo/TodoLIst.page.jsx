@@ -13,15 +13,17 @@ const TodoList = () => {
     const dispatch = useDispatch();
     function submitForm(e) {
         e.preventDefault();
-        dispatch(
-            addTodoAction({
-                task: task,
-                description: description,
-                status: "inprogress",
-            })
-        );
-        setTask("");
-        setDescription("");
+        if (task && description) {
+            dispatch(
+                addTodoAction({
+                    task: task,
+                    description: description,
+                    status: "inprogress",
+                })
+            );
+            setTask("");
+            setDescription("");
+        }
     }
     return (
         <Container>
