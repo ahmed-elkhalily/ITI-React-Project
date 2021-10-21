@@ -1,0 +1,11 @@
+.todo-header {
+    color: var(--blue-3);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+button.task__form-btn {
+    background: var(--blue-3) !important;
+    border: none;
+    color: #e1e1e1;
+    border-radius: 2px;
+}
