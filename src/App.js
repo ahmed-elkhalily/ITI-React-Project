@@ -5,8 +5,11 @@ import Shop from "./pages/shop/Shop.page";
 import SingleProduct from "./pages/single-product/SingleProduct.page";
 import Home from "./pages/home/Home.page";
 import TodoList from "./pages/todo/TodoLIst.page";
+import Login from "./pages/login/Login.page";
+import Register from "./pages/register/Register.page";
+// components
 import Menu from "./components/Navbar.component";
-import Footer from "./components/footer/Footer.component";
+// import Footer from "./components/footer/Footer.component";
 
 function App() {
     return (
@@ -18,8 +21,10 @@ function App() {
                 <Route component={Shop} path="/shop" exact />
                 <Route component={SingleProduct} path="/shop/:id" />
                 <Route component={TodoList} path="/todo" />
+                <Route component={Login} path="/login" />
+                <Route component={Register} path="/register" />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }
