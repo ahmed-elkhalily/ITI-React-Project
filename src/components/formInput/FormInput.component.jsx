@@ -1,13 +1,13 @@
 import { Form } from "react-bootstrap";
 import "./FormInput.component.scss";
-const TodoForm = ({ controlId, labelName, ...otherProps }) => {
+const FormInput = ({ controlId, labelName, ...otherProps }) => {
     return (
         <>
-            <Form.Group className="mb-3" controlid={controlId}>
+            <Form.Group controlid={controlId}>
                 <Form.Label>{labelName}</Form.Label>
                 <Form.Control {...otherProps} />
             </Form.Group>
         </>
     );
 };
-export default TodoForm;
+export default FormInput;
