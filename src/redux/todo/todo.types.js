@@ -1,0 +1,5 @@
+export const todoTypes = {
+    ADD_ITEM_TODO: "ADD_ITEM_TODO",
+    REMOVE_ITEM_TODO: "REMOVE_ITEM_TODO",
+    COMPLETE_ITEM_TODO: "COMPLETE_ITEM_TODO",
+};

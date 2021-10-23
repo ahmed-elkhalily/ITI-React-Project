@@ -1,8 +1,6 @@
-import Menu from "../../components/Navbar.component";
 const Home = () => {
     return (
         <>
-            <Menu />
             <div className="home">
                 <div className="container">
                     <h1 className="d-flex justify-content-center align-items-center">

@@ -1,0 +1,19 @@
+.card {
+    &__img {
+        width: 30%;
+        margin: 0 auto;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__link:active,
+    &__link:focus,
+    &__link:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -10,11 +10,14 @@ const Menu = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
+                        <Link className="nav-link" to="/todo">
+                            TodoList
+                        </Link>
                         <Link className="nav-link" to="/shop">
-                            Home
+                            Shop
                         </Link>
                         <Link className="nav-link" to="/counter">
-                            counter
+                            Counter
                         </Link>
                     </Nav>
                 </Navbar.Collapse>
