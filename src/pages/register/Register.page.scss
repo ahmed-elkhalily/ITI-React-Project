@@ -1,0 +1,36 @@
+.form-check-input:checked {
+    background: var(--blue-3);
+    border: var(--blue-3);
+}
+.register {
+    margin-bottom: 2rem;
+}
+.btn-submit {
+    width: 25%;
+}
+.btn-add {
+    width: 73%;
+}
+.hobbies__field {
+    display: flex;
+    &:first-child {
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    padding: 0.25rem 0;
+    justify-content: center;
+    .btn-wrapper {
+        display: flex;
+        align-items: center;
+        button {
+            border: 2px solid var(--red);
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 50%;
+            line-height: 1;
+            color: var(--red);
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    }
+}

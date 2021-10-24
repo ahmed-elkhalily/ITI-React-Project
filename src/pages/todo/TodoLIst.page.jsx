@@ -50,9 +50,9 @@ const TodoList = () => {
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                     />
-                    <Button className="w-100 task__form-btn" type="submit">
+                    <button className="w-100 btn task__form-btn" type="submit">
                         Add Task
-                    </Button>
+                    </button>
                 </Form>
             </Row>
         </Container>

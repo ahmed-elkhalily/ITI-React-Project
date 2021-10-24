@@ -1,0 +1,19 @@
+.counter {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        font-size: 9rem;
+        font-family: monospace;
+        font-weight: bold;
+        color: var(--blue-3);
+    }
+}

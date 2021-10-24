@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "../../components/button/Button.component";
+import "./Counter.component.scss";
 
 export const Counter = () => {
     let [counter, setCounter] = useState(0);
@@ -12,15 +13,17 @@ export const Counter = () => {
         else setCounter(--value);
     }
     return (
-        <div className="App">
-            {counter}
+        <div className="counter">
+            <div className="counter__text">{counter}</div>
             <div className="btn__group">
                 <Button
-                    text={"increase"}
+                    className="counter__btn inc"
+                    text={"+"}
                     clickFun={() => increaseFun(counter)}
                 />
                 <Button
-                    text={"decrease"}
+                    text={"-"}
+                    className="counter__btn dec"
                     clickFun={() => decreseFun(counter)}
                     disabled={!counter}
                 />

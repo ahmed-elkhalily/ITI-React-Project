@@ -28,8 +28,8 @@ const TodoShow = () => {
                             <button
                                 className={`task__btn ${
                                     task.status === "completed"
-                                        ? "task__btn-check"
-                                        : ""
+                                        ? ""
+                                        : "task__btn-check"
                                 }`}
                                 onClick={() =>
                                     dispatch(completeTodoTask(index))
