@@ -8,8 +8,7 @@ import TodoList from "./pages/todo/TodoLIst.page";
 import Login from "./pages/login/Login.page";
 import Register from "./pages/register/Register.page";
 // components
-import Menu from "./components/Navbar.component";
-// import Footer from "./components/footer/Footer.component";
+import Menu from "./components/navbar/Navbar.component.jsx";
 
 function App() {
     return (

@@ -8,3 +8,18 @@ body {
     --blue-2: #457b9d;
     --blue-3: #1d3557;
 }
+
+.form-control:focus {
+    border-color: #1d3557;
+    box-shadow: 0 0 0 0.25rem rgb(29 53 87 / 19%);
+}
+.btn:focus {
+    border-color: #1d3557;
+    box-shadow: 0 0 0 0.25rem rgb(29 53 87 / 19%);
+    color: #e1e1e1 !important;
+}
+
+.btn,
+.btn:focus {
+    color: #e1e1e1 !important;
+}

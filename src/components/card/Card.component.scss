@@ -1,4 +1,9 @@
 .card {
+    padding: 1rem;
+    width: 103%;
+    &-text {
+        color: var(--blue-2);
+    }
     &__img {
         width: 30%;
         margin: 0 auto;
@@ -9,7 +14,11 @@
         text-decoration: none;
         color: inherit;
     }
-
+    &-title {
+        font-weight: bold !important;
+        margin: 1rem 0 !important;
+        color: var(--blue-3);
+    }
     &__link:active,
     &__link:focus,
     &__link:hover {

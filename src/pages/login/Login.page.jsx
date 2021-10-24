@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import * as Yub from "yup";
 import { Form, Container, Row, Button } from "react-bootstrap";
 import FormInput from "../../components/formInput/FormInput.component";
+import "./Login.page.scss";
 
 function Login() {
     const formik = useFormik({
